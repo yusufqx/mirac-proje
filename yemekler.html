@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffe7e7;
+    }
+
+    #kampcilik,
+    #bilgilendirme,
+    #ekipmanlar,
+    #iletisim,
+    #yemek {
+        background-color: #00000080;
+        width: 100px;
+
+    }
+
+    .container * {
+        color: rgb(255, 255, 255);
+    }
+
+
+    .card-body,
+    .card {
+        background-color: #0000004b;
+    }
+</style>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item text-center rounded">
+                        <a class="nav-link active" aria-current="page" href="kamp-index.html"
+                            style="color:white"><big>Ana Sayfa</big></a>
+                    </li>
+                    <li class="nav-item text-center rounded">
+                        <a class="nav-link" href="kampcilik.html">
+                            <div id="kampcilik" class="rounded">Kampçılık</div>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center rounded">
+                        <a class="nav-link" href="bilgilendirme.html">
+                            <div id="bilgilendirme" class="rounded">Bilgilendirme</div>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center rounded">
+                        <a class="nav-link" href="ekipmanlar.html">
+                            <div id="ekipmanlar" class="rounded">Ekipmanlar</div>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center rounded">
+                        <a class="nav-link" href="iletisim.html">
+                            <div id="iletisim" class="rounded">İletişim</div>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center rounded">
+                        <a class="nav-link" href="yemekler.html">
+                            <div id="yemek" class="rounded">Yemekler</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="container-fluid bg-dark py-3">
+        <div class="container">
+            <h1 class="text-white">Kampçılık Yemekleri</h1>
+        </div>
+    </header>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="mantar.jpg" alt="Mantar Sote" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantar Sote</h5>
+                        <p class="card-text">Mantar, soğan, sarımsak ve baharatlarla yapılan lezzetli bir sote.</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#soteTarifi" aria-expanded="false" aria-controls="soteTarifi">
+                            Tarifi Görüntüle
+                        </button>
+                        <div class="collapse mt-3" id="soteTarifi">
+                            <h6>Malzemeler:</h6>
+                            <ul>
+                                <li>500 gr mantar</li>
+                                <li>1 adet soğan</li>
+                                <li>3 diş sarımsak</li>
+                                <li>1 yemek kaşığı tereyağı</li>
+                                <li>1 yemek kaşığı zeytinyağı</li>
+                                <li>Tuz, karabiber, kekik</li>
+                            </ul>
+                            <h6>Yapılışı:</h6>
+                            <ol>
+                                <li>Mantarları temizleyin ve dilimleyin.</li>
+                                <li>Soğan ve sarımsağı küçük küpler halinde doğrayın.</li>
+                                <li>Tereyağı ve zeytinyağını tavada eritin.</li>
+                                <li>Soğan ve sarımsağı tavada kavurun.</li>
+                                <li>Mantarları ekleyin ve suyunu salıp çekene kadar pişirin.</li>
+                                <li>Baharatları ekleyin ve karıştırın.</li>
+                                <li>Sıcak servis yapın.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="burger.jpg" class="card-img-top" alt="Recipe Image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Baharatlı Kara fasulye hamburgeri
+                        </h5>
+                        <p class="card-text">
+                            Siyah fasulye ile yapılan lezzetli ve sağlıklı bir vejetaryen burger,
+                            baharatlar ve sebzeler. Kamp için mükemmel!
+                        </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse-burger"
+                            aria-expanded="false" aria-controls="collapse-burger">Tarifi Görüntüle</a>
+                    </div>
+                    <div class="collapse" id="collapse-burger">
+                        <div class="card-body">
+                            <h6>Malzemeler:</h6>
+                            <ul>
+                                <li>1 kutu siyah fasulye, süzülmüş ve durulanmış</li>
+                                <li>1/2 su bardağı galeta unu</li>
+                                <li>1/2 su bardağı doğranmış soğan</li>
+                                <li>1/4 su bardağı doğranmış dolmalık biber</li>
+                                <li>1/4 su bardağı doğranmış mantar</li>
+                                <li>1 diş sarımsak, kıyılmış</li>
+                                <li>1 çay kaşığı acı biber</li>
+                                <li>1 çay kaşığı kimyon</li>
+                                <li>1/2 çay kaşığı tuz</li>
+                                <li>1/4 çay kaşığı karabiber</li>
+                                <li>1 yumurta</li>
+                                <li>4 hamburger ekmeği</li>
+                                <li>seçtiğiniz soslar (marul, domates, soğan, peynir vb.)</li>
+                            </ul>
+                            <h6>Talimatlar:</h6>
+                            <ol>
+                                <li>
+                                    Büyük bir karıştırma kabında siyah fasulyeleri çatalla ezin veya
+                                    çoğunlukla pürüzsüz olana kadar patates ezici.
+                                </li>
+                                <li>
+                                    Galeta ununu, soğanı, dolmalık biberi, mantarı, sarımsağı ekleyin,
+                                    pul biber, kimyon, tuz, karabiber ve yumurtayı kaseye alın.
+                                    İyice birleştirilene kadar karıştırın.
+                                </li>
+                                <li>
+                                    Karışımı 4 beze haline getirin ve bir tabağa koyun. Kapak
+                                    ve en az 30 dakika buzdolabında bekletin.
+                                </li>
+                                <li>
+                                    Bir ızgarayı veya ızgara tavasını orta-yüksek ateşte ısıtın. ızgarayı fırçala
+                                    yağ ile rendeleyin veya tavada.
+                                </li>
+                                <li>
+                                    Köfteleri ızgaraya ekleyin ve her yüzünü 3-4 dakika pişirin,
+                                    veya kızarana ve çıtır çıtır olana kadar.
+                                </li>
+                                <li>
+                                    Köfteleri en sevdiğiniz soslarla hamburger ekmeği üzerinde servis edin.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="patso.jpg" class="card-img-top" alt="Recipe Image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Patatesli Ekmek
+                        </h5>
+                        <p class="card-text">
+                            Patatesli ekmek kampta akşam yemekleri veya sabah kahvaltıları için hem hazırlanması kolay
+                            hemde karın doyurucu mükemmel bir yemektir!
+                        </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse-patato"
+                            aria-expanded="false" aria-controls="collapse-patato">Tarifi Görüntüle</a>
+                    </div>
+                    <div class="collapse" id="collapse-patato">
+                        <div class="card-body">
+                            <h6>Malzemeler:</h6>
+                            <ul>
+                                <li>2 adet büyük boy patates</li>
+                                <li>1 su bardağı ılık süt</li>
+                                <li>1/2 su bardağı sıvı yağ</li>
+                                <li>1 yemek kaşığı kuru maya</li>
+                                <li>1 yemek kaşığı toz şeker</li>
+                                <li>1 tatlı kaşığı tuz</li>
+                                <li>4 su bardağı un</li>
+                            </ul>
+                            <ol>
+                                <li>Patatesleri haşlayın ve püre haline getirin.</li>
+                                <li>Ilık süt, sıvı yağ, maya, şeker ve tuzu karıştırın.</li>
+                                <li>Püre haline getirdiğiniz patatesi karışıma ekleyin ve karıştırın.</li>
+                                <li>Unu yavaş yavaş ekleyin ve yoğurun. Hamurun üzerini örtüp, 1 saat kadar
+                                    mayalandırın.</li>
+                                <li>Mayalanan hamuru yağlanmış ekmek kalıbına yerleştirin ve üzerini bir örtü ile örtün.
+                                    30 dakika kadar daha mayalandırın.</li>
+                                <li>Önceden ısıtılmış 180 derece fırında yaklaşık 35-40 dakika pişirin.</li>
+                                <li>Patatesli ekmek tarifi hazır!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Kamp Yemekleri</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kahvalti">Kahvaltı</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#ogle">Öğle Yemeği</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#aksam">Akşam Yemeği</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section id="kahvalti" class="container my-5">
+                    <h2>Kahvaltı</h2>
+                    <div class="row">
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="omlet.jpg"
+                                    class="card-img-top" alt="Omlet" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Omlet</h5>
+                                    <p class="card-text">
+                                        Yumurta, peynir, sebzeler ve baharatlarla hazırlanmış lezzetli bir kahvaltı
+                                        seçeneği.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="sandviç.jpg"
+                                    class="card-img-top" alt="Sandviç" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Sandviç</h5>
+                                    <p class="card-text">
+                                        Farklı malzemelerle hazırlayabileceğiniz pratik bir öğle yemeği seçeneği.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="cips.jpg"
+                                    class="card-img-top" alt="Patates Kızartması" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Patates Kızartması</h5>
+                                    <p class="card-text">
+                                        Kendi patateslerinizi keserek hazırlayabileceğiniz lezzetli bir yan yemek
+                                        seçeneği.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="aksam" class="container my-5">
+                    <h2>Akşam Yemeği</h2>
+                    <div class="row">
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="tavuk.jpg"
+                                    class="card-img-top" alt="Izgara Tavuk" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Izgara Tavuk</h5>
+                                    <p class="card-text">
+                                        Izgara tavuk, sebzeler ve baharatlarla hazırlanmış lezzetli bir akşam yemeği
+                                        seçeneği.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="yemek.jpg"
+                                    class="card-img-top" alt="Kamp Yemeği" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Kamp Yemeği</h5>
+                                    <p class="card-text">
+                                        Farklı malzemeleri bir araya getirerek hazırlayabileceğiniz pratik bir yemek
+                                        seçeneği.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="mangal.jpg"
+                                    class="card-img-top" alt="Mangalda Pişirilmiş Et" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Mangalda Pişirilmiş Et</h5>
+
+                                    <p class="card-text">
+                                        Kamp ateşinde veya mangalda pişirilmiş et, sebzeler ve baharatlarla hazırlanmış
+                                        lezzetli bir akşam yemeği seçeneği.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="patates.jpg"
+                                    class="card-img-top" alt="Kamp Ateşinde Hazırlanmış Patates" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Kamp Ateşinde Hazırlanmış Patates</h5>
+                                    <p class="card-text">
+                                        Patates, soğan, biber ve baharatlarla birlikte kamp ateşinde hazırlanarak servis
+                                        edilen nefis bir yan yemek.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="mısır.JPG"
+                                    class="card-img-top" alt="Kamp Ateşinde Hazırlanmış Mısır" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Kamp Ateşinde Hazırlanmış Mısır</h5>
+                                    <p class="card-text">
+                                        Kamp ateşinde veya mangalda pişirilen mısır, tuz ve tereyağı ile
+                                        lezzetlendirilerek servis edilebilir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card">
+                                <img src="tatlı.jpg"
+                                    class="card-img-top" alt="Kamp Ateşinde Hazırlanmış Tatlı" />
+                                <div class="card-body">
+                                    <h5 class="card-title">S'moresS</h5>
+                                    <p class="card-text">
+                                        Kamp ateşinde hazırlanabilecek, marshmallow ve çikolata ile hazırlanan bir tatlı seçeneği.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+                    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+                    scrossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
